@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   --size: 100%;
+  --logosize: 250%;
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
   --color: #ffffff;
@@ -17,7 +18,7 @@ body {
   margin: 2rem;
   background-color: #ffffff;
   color: #000000;
-  font-size: 100%;
+  font-size: var(--size);
   font-family: Arial, sans-serif;
   margin: 100;
   padding: 0;
@@ -25,7 +26,7 @@ body {
 }
 
 .link {
-    font-size: 100%;
+    font-size: var(--size);
     color: #ffffff;
 }
 
@@ -35,22 +36,22 @@ body {
 }
 
 .text {
-    font-size: 100%;
+    font-size: var(--size);
     color: #ffffff;
 }
 
 .header_text {
-    font-size: 100%;
+    font-size: var(--size);
     color: #ffffff;
 }
 
 .headertextBlack {
-  font-size: 100%;
+  font-size: var(--size);
   font-weight: bold;
   color: #000000;
 }
 
-#github {
+/* #github {
   position: fixed;
   bottom: 450px;
   right: 450px;
@@ -69,7 +70,7 @@ body {
   bottom: 350px;
   right: 450px;
   background: #1f201f;
-}
+} */
 
 #CV_picture {
   position: fixed;
@@ -348,19 +349,19 @@ body {
 hr {
   color: rgb(255, 255, 255);
 }
-
+/* 
 #hr_one {
   position: relative;
   top: 125px;
-  left: 500px;
+  left: 50%;
   background: #1f201f;
   width: 60%;
   color: #ffffff;
-}
+} */
 
 #intro {
-  position: relative;
-  top: 135px;
+  position: absolute;
+  top: 18%;/*130px;*/
   left: 32%;
   background: #ffffff;
   width: 65%;
@@ -381,7 +382,7 @@ hr {
   position: fixed;
   top: 75%;
   left: 7.5%;
-  font-size: 100%;
+  font-size: var(--logosize);
   color: #ffffff;
   z-index: 2;
 }
@@ -389,7 +390,7 @@ hr {
   position: fixed;
   top: 75%;
   left: 12.5%;
-  font-size: 100%;
+  font-size: var(--logosize);
   color: #ffffff;
   z-index: 4;
 }
@@ -397,7 +398,7 @@ hr {
   position: fixed;
   top: 75%;
   left: 17.5%;
-  font-size: 40em;
+  font-size: var(--logosize);
   color: #ffffff;
   z-index: 4;
 }
