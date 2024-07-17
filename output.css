@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  --size: 10em;
+  --size: 100%;
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
   --color: #ffffff;
@@ -25,7 +25,7 @@ body {
 }
 
 .link {
-    font-size: 2.5em;
+    font-size: 100%;
     color: #ffffff;
 }
 
@@ -35,17 +35,17 @@ body {
 }
 
 .text {
-    font-size: 2.5em;
+    font-size: 100%;
     color: #ffffff;
 }
 
 .header_text {
-    font-size: 2.5em;
+    font-size: 100%;
     color: #ffffff;
 }
 
 .headertextBlack {
-  font-size: 2.5em;
+  font-size: 100%;
   font-weight: bold;
   color: #000000;
 }
@@ -380,7 +380,7 @@ hr {
   position: fixed;
   top: 75%;
   left: 7.5%;
-  font-size: 40px;
+  font-size: 100%;
   color: #ffffff;
   z-index: 2;
 }
@@ -388,7 +388,7 @@ hr {
   position: fixed;
   top: 75%;
   left: 12.5%;
-  font-size: 40px;
+  font-size: 100%;
   color: #ffffff;
   z-index: 4;
 }
@@ -396,7 +396,7 @@ hr {
   position: fixed;
   top: 75%;
   left: 17.5%;
-  font-size: 150em;
+  font-size: 100%;
   color: #ffffff;
   z-index: 4;
 }
