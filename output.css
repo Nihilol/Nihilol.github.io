@@ -349,15 +349,16 @@ body {
 hr {
   color: rgb(255, 255, 255);
 }
-/* 
+
 #hr_one {
   position: relative;
-  top: 125px;
-  left: 50%;
-  background: #1f201f;
-  width: 60%;
-  color: #ffffff;
-} */
+  top: 50%;
+  left: 0%;
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  color: #901A1E;
+}
 
 #intro {
   position: absolute;
