@@ -459,10 +459,18 @@ hr {
 
 .contactRectangle {
   position: relative;
-  width: 25%;
+  width: 30%;
   height: 10%;
   left: 72%;
   background: #f0f0f0;
+}
+
+#courselist {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  left: 7%;
+  top: 0%;
 }
 
 
