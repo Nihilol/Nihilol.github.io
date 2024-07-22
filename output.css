@@ -362,13 +362,30 @@ hr {
 
 #intro {
   position: absolute;
-  top: 18%;/*130px;*/
+  top: 18%;
   left: 32%;
   background: #ffffff;
   width: 65%;
   font-size: 100%;
 }
 
+#education {
+  position: absolute;
+  top: 65%;
+  left: 32%;
+  background: #ffffff;
+  width: 65%;
+  font-size: 100%;
+}
+
+#employment {
+  position: absolute;
+  top: 110%;
+  left: 32%;
+  background: #ffffff;
+  width: 65%;
+  font-size: 100%;
+}
 
 #coverRectangle {
   position: fixed;
