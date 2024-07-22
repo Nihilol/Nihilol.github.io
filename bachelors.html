@@ -3,11 +3,212 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bachelor's</title>
+    <title>Oliver Liebe's Website</title>
     <link href="output.css" rel="stylesheet">
   </head>
 <body>
+  <div id="info">
+    <a class="link" id="qdev" href="https://www.fox.energy.dtu.dk/">Section for Functional Oxides</a>
+    <a class="link" id="nbi" href="https://www.energy.dtu.dk/">DTU Energy</a>
+    <a class="link" id="ku" href="https://www.dtu.dk/">Technical University of Denmark</a>
+    <a class="header_text" id="name">Oliver Liebe</a>
+    <a class="text" id="title">PhD Student in Physics</a>
+    <a class="text" id="address">Fysikvej, Building 310, 2800 Kgs. Lyngby</a>
+    <img id = "CV_picture" src="images/CV_Billede_roundcrop.jpg" alt="Cover picture">
+    <img id = "background" src="images/milky-way-background_cropped.jpg" alt="Cover picture">
+    <!-- <video autoplay muted loop id="background">
+      <source src="files/dust_particles_small.mp4" type="video/mp4">
+    </video> -->
+  </div>
+  <a class="text" id="image_credit">Image credit: FreePik</a>
+  <div id="intro">
+    <h1>Bachelor's of Science, 2019 - 2022</h1>
+    <br />
+    <hr id="hr_one"></hr>
+    <br />
+
     I received my Bachelor's of Science in Physics from the University of Southern Denmark in 2022. My Bachelor's thesis was on the topic of "Smectic Liquid Crystals as Light-Guides" 
     and was supervised by Professor Franscesca Serra. The thesis was an experimental study of the optical properties of smectic liquid crystals and their potential use as light-guides.
+
+  <br />
+
+  <br />
+
+  <div class = "contactRectangle">
+    <a class = "headertextBlack">
+      <p style="text-align:center;">e-mail:</p>
+      Personal: Oliverliebe@hotmail.com
+      <br />
+      Work: olili@dtu.dk
+    </a>
+  </div>
+
+  <br />
+  <br />
+
+
+  <div id = "linksLogosGit" class="links">
+    <a href = "https://github.com/Nihilol">
+      <i class="fa-brands fa-github">
+      </i>
+    </a>
+  </div>
+  <div id = "linksLogosLinkedIn" class="links">
+    <a href = "https://www.linkedin.com/in/oliver-liebe-716a10106/">
+      <i class="fa-brands fa-linkedin">
+      </i>
+    </a>
+  </div>
+  <div id = "linksLogosOrcid" class="links">
+    <a href = "https://orcid.org/my-orcid?orcid=0000-0002-8896-9945">
+      <i class="fa-brands fa-orcid">
+      </i>
+    </a>
+  </div>
+  <div id="coverRectangle" class="rectangle"></div>
+
+
+  <script src="scripts/main.js"></script>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <div id = "links_logos">
+
+  </div>
+
+  <div id = "research" class="container">
+    <button class="btn" id="btn">
+      Research
+      <i class="bx bx-chevron-down" id="arrow"></i>
+    </button>
+
+    <div class="dropdown" id="dropdown">
+      <a href="bachelors.html">
+        <i type = "solid" class="bx bx-scatter-chart"></i>
+        Bachelor's in Physics
+      </a>
+      <a href="#desy">
+        <i class="bx bx-analyse"></i>
+        Internship at DESY
+      </a>
+      <a href="#master">
+        <i class="bx bx-brain"></i>
+        Master's in Quantum Physics
+      </a>
+      <a href="#phd">
+        <i class="bx bx-pulse"></i>
+        PhD in Condensed Matter Physics
+      </a>
+    </div>
+  </div>
+  <div id = "sections" class="container">
+    <button class="btn1" id="btn1">
+      Sections
+      <i class="bx bx-chevron-down" id="arrow1"></i>
+    </button>
+
+    <div class="dropdown1" id="dropdown1">
+      <a href="https://github.com/Nihilol">
+        <i type = "solid" class="bx bx-align-left"></i>
+        Introduction
+      </a>
+      <a href="https://www.linkedin.com/in/oliver-liebe-716a10106/">
+        <i type = "solid" class="bx bx-hard-hat"></i>
+        Past Employment
+      </a>
+      <a href="https://orcid.org/my-orcid?orcid=0000-0002-8896-9945">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Education
+      </a>
+    </div>
+  </div>
+
+  <div id = "technical" class="container">
+    <button class="btn2" id="btn2">
+      Technical Skills
+      <i class="bx bx-chevron-down" id="arrow2"></i>
+    </button>
+
+    <div class="dropdown2" id="dropdown2">
+      <a href="#code">
+        <i type = "solid" class="bx bx-code-alt"></i>
+        Coding Skills
+      </a>
+      <a href="#cleanroom">
+        <i type = "solid" class="bx bx-vial"></i>
+        Experimental Techniques
+      </a>
+    </div>
+  </div>
+  <script>
+      const dropdownBtn = document.getElementById("btn");
+      const dropdownMenu = document.getElementById("dropdown");
+      const toggleArrow = document.getElementById("arrow");
+
+      const dropdownBtn1 = document.getElementById("btn1");
+      const dropdownMenu1 = document.getElementById("dropdown1");
+      const toggleArrow1 = document.getElementById("arrow1");
+
+      const dropdownBtn2 = document.getElementById("btn2");
+      const dropdownMenu2 = document.getElementById("dropdown2");
+      const toggleArrow2 = document.getElementById("arrow2");
+
+      // Toggle dropdown function
+      const toggleDropdown = function () {
+      dropdownMenu.classList.toggle("show");
+      toggleArrow.classList.toggle("arrow");
+      };
+
+      // Toggle dropdown open/close when dropdown button is clicked
+      dropdownBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggleDropdown();
+      });
+
+      // Close dropdown when dom element is clicked
+      document.documentElement.addEventListener("click", function () {
+      if (dropdownMenu.classList.contains("show")) {
+          toggleDropdown();
+      }
+      });
+      // Toggle dropdown function
+      const toggleDropdown1 = function () {
+      dropdownMenu1.classList.toggle("show1");
+      toggleArrow1.classList.toggle("arrow1");
+      };
+
+      // Toggle dropdown open/close when dropdown button is clicked
+      dropdownBtn1.addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggleDropdown1();
+      });
+
+      // Close dropdown when dom element is clicked
+      document.documentElement.addEventListener("click", function () {
+      if (dropdownMenu1.classList.contains("show1")) {
+          toggleDropdown1();
+      }
+      });
+
+      // Toggle dropdown function
+      const toggleDropdown2 = function () {
+      dropdownMenu2.classList.toggle("show2");
+      toggleArrow2.classList.toggle("arrow2");
+      };
+
+      // Toggle dropdown open/close when dropdown button is clicked
+      dropdownBtn2.addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggleDropdown2();
+      });
+
+      // Close dropdown when dom element is clicked
+      document.documentElement.addEventListener("click", function () {
+      if (dropdownMenu2.classList.contains("show2")) {
+          toggleDropdown2();
+      }
+      });
+  </script>
 </body>
 </html>
