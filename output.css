@@ -321,6 +321,7 @@ body {
   top: 5%;
   left: 34%;
   background: #1f201f;
+  z-index: 2;
 }
 
 #research {
@@ -328,6 +329,7 @@ body {
   top: 5%;
   left: 41%;
   background: #1f201f;
+  z-index: 2;
 }
 
 #technical {
@@ -335,6 +337,7 @@ body {
   top: 5%;
   left: 48.2%;
   background: #1f201f;
+  z-index: 2;
 }
 
 
@@ -394,6 +397,7 @@ hr {
   width: 70%;
   height: 15%;
   background: #686f97;
+  z-index: 4;
 }
 
 #linksLogosGit {
