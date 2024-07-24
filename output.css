@@ -9,14 +9,14 @@
   --logosize: 250%;
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
-  --color: #ffffff;
+  --color: #FBFCF8;
   --gap: 0.5rem;
   --radius: 5px;
 }
 
 body {
   margin: 2rem;
-  background-color: #ffffff;
+  background-color: var(--color);
   color: #000000;
   font-size: var(--size);
   font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@ body {
 
 .link {
     font-size: var(--size);
-    color: #ffffff;
+    color: var(--color);
 }
 
 .linkSmall {
@@ -37,12 +37,12 @@ body {
 
 .text {
     font-size: var(--size);
-    color: #ffffff;
+    color: var(--color);
 }
 
 .header_text {
     font-size: var(--size);
-    color: #ffffff;
+    color: var(--color);
 }
 
 .headertextBlack {
@@ -357,7 +357,7 @@ hr {
   position: relative;
   top: 50%;
   left: 0%;
-  background: #ffffff;
+  background: var(--color);
   height: 100%;
   width: 100%;
   color: #901A1E;
@@ -367,7 +367,7 @@ hr {
   position: absolute;
   top: 18%;
   left: 32%;
-  background: #ffffff;
+  background: var(--color);
   width: 65%;
   font-size: 100%;
 }
@@ -376,7 +376,7 @@ hr {
   position: absolute;
   top: 65%;
   left: 32%;
-  background: #ffffff;
+  background: var(--color);
   width: 65%;
   font-size: 100%;
 }
@@ -385,7 +385,7 @@ hr {
   position: absolute;
   top: 110%;
   left: 32%;
-  background: #ffffff;
+  background: var(--color);
   width: 65%;
   font-size: 100%;
 }
@@ -466,7 +466,7 @@ hr {
   position: relative;
   width: 20%;
   height: auto;
-  float: left;
+  float: right;
   z-index: 2;
   padding-top: 0px;
   padding-right: 10px;
@@ -496,5 +496,44 @@ hr {
 
 
 
+#phases {
+  width: 40%;
+  height: auto;
+}
+
+.leftfloatImage {
+  position: relative;
+  width: 40%;
+  height: auto;
+  float: left;
+  z-index: 2;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.rightfloatImage {
+  position: relative;
+  border: 2px solid #555;
+  float: right;
+  z-index: 1;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+}
 
 
+#phasesList {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  left: 7%;
+  top: 20px;
+}
+
+#directorMapping {
+  width: 70%;
+  height: auto;
+}
