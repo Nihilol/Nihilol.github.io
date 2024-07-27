@@ -497,7 +497,7 @@ hr {
 
 
 #phases {
-  width: 40%;
+  width: 15%;
   height: auto;
 }
 
@@ -525,6 +525,18 @@ hr {
 }
 
 
+.centerImage {
+  position: relative;
+  display: block;
+  border: 2px solid #555;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
 #phasesList {
   position: relative;
   width: 90%;
@@ -537,3 +549,22 @@ hr {
   width: 70%;
   height: auto;
 }
+
+#escapedDefect {
+  width: 15%;
+  height: auto;
+}
+
+#anchoring {
+  width: 30%;
+  height: auto;
+}
+
+#anchoringList {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  left: 7%;
+  top: 20px;
+}
+
