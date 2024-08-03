@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Oliver Liebe's Website</title>
+    <title>Oliver Liebe</title>
     <link href="output.css" rel="stylesheet">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
@@ -15,7 +15,7 @@
     <a class="header_text" id="name">Oliver Liebe</a>
     <a class="text" id="title">PhD Student in Physics</a>
     <a class="text" id="address">Fysikvej, Building 310, 2800 Kgs. Lyngby</a>
-    <img id = "CV_picture" src="images/CV_Billede_roundcrop.jpg" alt="Cover picture">
+    <a href = "index.html"><img id = "CV_picture" src="images/CV_Billede_roundcrop.jpg" alt="Cover picture" href =></a>
     <img id = "background" src="images/milky-way-background_cropped.jpg" alt="Cover picture">
     <img id = "coverRectangle" src="images/milky-way-background_cropped_small_2.jpg" alt="small picture">
     <!-- <video autoplay muted loop id="background">
@@ -69,6 +69,9 @@
 
     <br /> <br />
 
+    <h2>Introductory Theory</h2>
+
+
     <img class = "rightfloatImage" id = "phases" src="bachelor_files/phases_1.jpg" alt="phases_image">
 
     <h3>Introduction to Liquid Crystals and their Phases</h3>
@@ -90,9 +93,22 @@
 
     <br /> <br />
 
-    The specific ordering of the liquid crystals leads us to the next section, topology and defects:
+    We're interested in investigating how the liquid crystals react under varying conditions, and therefore we're interested in how the director field changes. 
+    There are generally three modes of director field deformation, which are the splay, twist, and bend modes, seen below in the respective order.
+    
+    While all these deformation modes are available to the nematic phase, the smectic A phase's layer structures inhibits the bend mode, as it would disrupt the layer structure. 
 
     <br /> <br />
+
+    <img class = "centerImage" id = "directorDeformations" src="bachelor_files/directorDeformations.jpg" alt="directorDeformations">
+
+    <br /> <br />
+
+    These discussions lead us to the next section of interest: topology and defects.
+
+    <br /> <br />
+
+
 
     <h3>Topology and Defects in Liquid Crystals</h3>
 
@@ -132,6 +148,7 @@
 
     This is the concept of an "escaped" defect. However, the defect escaped into the third dimension by bending the director field, which is prohibited in the smectic A phase,
     due to the layer structure, meaning the smectic A phase can sustain stable line defects. <br />
+    These specific line defects are what we will be trying to utilise as optical fibres. <br />
 
     <br /> <br />
 
@@ -159,9 +176,52 @@
     Where \( W \) is the anchoring strength, \( \theta \) is the angle between the director field and the anchoring director, and \( \theta_0 \) is the angle at which the director field is anchored. <br />
     This relation is the energy cost of deviating from the anchoring direction, and is minimized when the director field is parallel to the anchoring direction. <br />
 
+    <br /> <br />
 
+    <h3>Surface Tension, Interfaces, and Surfactants</h3>
 
+    Surface tension is the manifestation of the energy cost of creating an interface between a bulk liquid and some other non-miscible liquid/gas. 
+    Assuming a flat interface, the molecules at the very top of the non-mixing interface, will experience a net attractive force towards the bulk liquid,
+    due to the intermolecular forces between the molecules. <br />
+    This surface tension can be altered by the introduction of surfactants, which have a hydrophilic and a oleophilic end, acting as an intermediary between two non-miscible liquids. <br />
+    The introduction of surfactants to two non-miscible liquids results in a lowering of the surface tension, but it can also create micelles, which are structures that encapsulate
+    the surfactants in a way that the hydrophilic end is facing the water, and the oleophilic end is facing the oil. <br /> 
+    A measure of concentration of surfactants is the critical micelle concentration (CMC), which is the concentration at which half of all surfactant molecules are aggregated in micelles. <br />
+    A factor in this arrangement is the Krafft temperture, which is described as the lowest temperature at which micelles readily form. Below the Krafft temperature, the solubility 
+    is below the CMC. 
+
+    <br /> <br />
+
+    By introducing surfactants in a specific concentration, with water as the solvent, we can drive instability between the interface of the two liquids, which can result in the formation of
+    stable line defects from the smectic A phase, which can be used as light-guides. <br />
+
+    <br /> <br />
+
+    <h3>Optical Guiding</h3>
+
+    Considering the case of a uniform core fibre, the light is guided through the fibre by total internal reflection. The concept can be derived from Snell's law of electrodynamics:
+
+    \[ \frac{\sin(\theta_T)}{\sin(\theta_I)} = \frac{n_1}{n_2} \]
+
+    Where \( \theta_T \) is the angle of the transmitted light, \( \theta_I \) is the angle of the incident light, and \( n_1 \) and \( n_2 \) are the refractive indices of the two media. <br />
+    Now considering the case where the light moves from an optically dense material to a less optically dense material, from which it follows: \( n_1 > n_2 \). The critical angle \( \theta_c \) is
+    then given by: 
+    \[ \theta_c = \sin^{-1}\left(\frac{n_2}{n_1}\right) \]
+    The critical angle is a measure of how large the incident angle can be, before refraction ceases, and there is total internal reflection, and is given by the criteria:
+    \[ \theta_I > \theta_c \]
+
+    <br /> <br />
     
+
+    <h2>Experimental Set-up</h2>
+
+    <h3>Cell Preparation</h3>
+
+    <img class = "rightfloatImage" id = "cell" src="bachelor_files/cell.jpg" alt="cell">
+
+    An example illustration of the cell used for the experiments is shown on the right. The cell consists of two glass substrates, seperated by a spacer.
+    Before joining the two substrates, the liquid crystal is introduced as a droplet, shown as a blue ellipse in the figure. Following the introduction of the liquid crystal,
+    the cell is closed, and a solvent of surfactants, shown as a blue rectangle, is introduced into the cell via capillary action. 
 
 
   <br />

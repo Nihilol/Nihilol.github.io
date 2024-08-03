@@ -414,7 +414,7 @@ hr {
   left: 12.5%;
   font-size: var(--logosize);
   color: #ffffff;
-  z-index: 4;
+  z-index: 2;
 }
 #linksLogosOrcid {
   position: fixed;
@@ -422,7 +422,7 @@ hr {
   left: 17.5%;
   font-size: var(--logosize);
   color: #ffffff;
-  z-index: 4;
+  z-index: 2;
 }
 
 #background {
@@ -503,14 +503,13 @@ hr {
 
 .leftfloatImage {
   position: relative;
-  width: 40%;
-  height: auto;
+  border: 2px solid #555;
   float: left;
-  z-index: 2;
+  z-index: 1;
   padding-top: 0px;
   padding-right: 10px;
   padding-bottom: 0px;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 
 .rightfloatImage {
@@ -566,5 +565,21 @@ hr {
   height: 100%;
   left: 7%;
   top: 20px;
+}
+
+#directorDeformations {
+  position: relative;
+  width: 40%;
+  height: auto;
+  left: 0%;
+  top: 0%;
+}
+
+#cell {
+  position: relative;
+  width: 30%;
+  height: auto;
+  left: 0%;
+  top: 0%;
 }
 
