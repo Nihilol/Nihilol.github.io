@@ -583,3 +583,27 @@ hr {
   top: 0%;
 }
 
+#retractionFibre1 {
+  position: relative;
+  width: 90%;
+  height: auto;
+  left: 0%;
+  top: 0%;
+}
+
+#concentricRings {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0%;
+  top: 0%;
+}
+
+#flowOrientation {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0%;
+  top: 0%;
+}
+
