@@ -16,11 +16,10 @@
     <a class="text" id="title">PhD Student in Physics</a>
     <a class="text" id="address">Fysikvej, Building 310, 2800 Kgs. Lyngby</a>
     <a href = "index.html"><img id = "CV_picture" src="images/CV_Billede_roundcrop.jpg" alt="Cover picture" href =></a>
-    <img id = "background" src="images/milky-way-background_cropped.jpg" alt="Cover picture">
-    <img id = "coverRectangle" src="images/milky-way-background_cropped_small_2.jpg" alt="small picture">
-    <!-- <video autoplay muted loop id="background">
-      <source src="files/dust_particles_small.mp4" type="video/mp4">
-    </video> -->
+  </div>
+  <img id = "background" src="images/milky-way-background.jpg" alt="Cover picture">
+  <div id = coverRectangle>
+    <img id = "coverImage" src="images/milky-way-background_top_cropped.jpg">
   </div>
   <a class="text" id="image_credit">Image credit: FreePik</a>
   <div id="intro">
@@ -52,14 +51,12 @@
 
 
     <div class = "contactRectangle">
-      <a class = "headertextBlack">
         <p align="center">
           e-mail:
         </p>
-        Personal: <script>(function whatever(){var s='@',n='Oliverliebe',k='hotmail.com',e=n+s+k,l='<a href=mailto:{{spam@uce.gov}}>{{spam@uce.gov}}</a>'.replace(/{{.+?(}})/g,e);document.write(l)})()</script>
+        <b>Personal:</b> <script>(function whatever(){var s='@',n='Oliverliebe',k='hotmail.com',e=n+s+k,l='<a href=mailto:{{spam@uce.gov}}>{{spam@uce.gov}}</a>'.replace(/{{.+?(}})/g,e);document.write(l)})()</script>
         <br />
         <b>Work:</b> <script>(function whatever(){var s='@',n='olili',k='dtu.dk',e=n+s+k,l='<a href=mailto:{{spam@uce.gov}}>{{spam@uce.gov}}</a>'.replace(/{{.+?(}})/g,e);document.write(l)})()</script>
-      </a>
     </div>
 
     <h1><a name="education">Education</a></h1>
@@ -175,7 +172,6 @@
       </i>
     </a>
   </div>
-  <!-- <div id="coverRectangle" class="rectangle"></div> -->
 
 
   <script src="scripts/main.js"></script>
@@ -319,6 +315,13 @@
           toggleDropdown2();
       }
       });
+
+      window.addEventListener("scroll",function(){
+      const windowScrollTop = window.scrollTop;
+      const elementToHide = document.getElementById("intro");
+
+      elementToHide.style.clipPath = `inset(${windowScrollTop}px 0 0 0)`;
+    });
   </script>
 </body>
 </html>

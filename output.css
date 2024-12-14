@@ -16,7 +16,7 @@
 
 body {
   margin: 2rem;
-  background-color: var(--color);
+  /* background-color: var(--color); */
   color: #000000;
   font-size: var(--size);
   font-family: Arial, sans-serif;
@@ -286,6 +286,8 @@ a.nounderline {text-decoration: none; }
   color: #1f201f;
 }
 
+
+
 .dropdown1 a:hover {
   background-color: var(--color);
   color: #1f201f;
@@ -329,7 +331,7 @@ a.nounderline {text-decoration: none; }
   top: 5%;
   left: 34%;
   background: #1f201f;
-  z-index: 2;
+  z-index: 4;
 }
 
 #research {
@@ -337,7 +339,7 @@ a.nounderline {text-decoration: none; }
   top: 5%;
   left: 41%;
   background: #1f201f;
-  z-index: 2;
+  z-index: 4;
 }
 
 #technical {
@@ -345,7 +347,7 @@ a.nounderline {text-decoration: none; }
   top: 5%;
   left: 48.2%;
   background: #1f201f;
-  z-index: 2;
+  z-index: 4;
 }
 
 
@@ -355,10 +357,31 @@ a.nounderline {text-decoration: none; }
   left: 35%;
   background: #1f201f;
   width: 60%;
+  overflow: auto;
+  backdrop-filter: blur(1px);
 }
 
 hr {
   color: rgb(255, 255, 255);
+}
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("images/milky-way-background.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 #hr_one {
@@ -369,15 +392,6 @@ hr {
   height: 100%;
   width: 100%;
   color: #901A1E;
-}
-
-#intro {
-  position: absolute;
-  top: 18%;
-  left: 32%;
-  background: var(--color);
-  width: 65%;
-  font-size: 100%;
 }
 
 #education {
@@ -398,14 +412,39 @@ hr {
   font-size: 100%;
 }
 
-#coverRectangle {
+#coverImage {
+  color: black;
   position: fixed;
   top: 0%;
   left: 30%;
-  width: 70%;
-  height: 15%;
-  background: #686f97;
-  z-index: 4;
+  width: 65%;
+  height: 149px;
+  z-index:4;
+}
+
+#coverRectangle {
+  color: black;
+  position: fixed;
+  top: 0%;
+  left: 30%;
+  width: 100%;
+  height: 150px;
+  z-index:4;
+  background: inherit;
+}
+
+#intro {
+  position: absolute;
+  color: white;
+  top: 16%;
+  left: 30%;
+  width: 65%;
+  font-size: 100%;
+  z-index: 2;
+  padding-left: 2%;
+  padding-top: 2%;
+  backdrop-filter: blur(10px);
+  overflow: auto;
 }
 
 #linksLogosGit {
@@ -437,8 +476,7 @@ hr {
   position: fixed;
   top: 0%;
   left: 0%;
-  /* transform: rotate(90deg); */
-  width: 30%;
+  width: 100%;
   height: 100%;
   background: #1f201f;
   z-index: 0;
@@ -487,11 +525,12 @@ hr {
 }
 
 .contactRectangle {
+  color: white;
   position: relative;
   width: 25%;
   height: 20%;
   left: 74%;
-  background: #f0f0f0;
+  background: inherit;
 }
 
 #courselist {
@@ -522,13 +561,13 @@ hr {
 
 .rightfloatImage {
   position: relative;
-  border: 2px solid #555;
+  /* border: 2px solid #555; */
   float: right;
   z-index: 1;
   padding-top: 0px;
   padding-right: 10px;
   padding-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 
