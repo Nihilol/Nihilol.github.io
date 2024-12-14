@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", serif;
   --size: 100%;
   --logosize: 250%;
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
@@ -24,6 +24,14 @@ body {
   padding: 0;
 
 }
+
+.sup {
+  position: relative;
+  bottom: 0.8ex; 
+  font-size: 80%;
+}
+
+a.nounderline {text-decoration: none; }
 
 .link {
     font-size: var(--size);
@@ -482,7 +490,7 @@ hr {
   position: relative;
   width: 25%;
   height: 20%;
-  left: 70%;
+  left: 74%;
   background: #f0f0f0;
 }
 
@@ -542,6 +550,14 @@ hr {
   height: 100%;
   left: 7%;
   top: 20px;
+}
+
+#desylist {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  left: 7%;
+  top: 15px;
 }
 
 #directorMapping {
