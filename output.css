@@ -662,3 +662,11 @@ hr {
   top: 0%;
 }
 
+#simulationImage {
+  position: relative;
+  width: 35%;
+  height: auto;
+  left: 0%;
+  top: 0%;
+  border-radius: 0%;
+}
