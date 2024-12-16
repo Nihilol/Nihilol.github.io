@@ -37,7 +37,7 @@ html {
   color: var(--link-color)
 }
 
-.sup {
+.sub {
   position: relative;
   top: 0.8ex; 
   font-size: 80%;
