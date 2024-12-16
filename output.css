@@ -37,6 +37,12 @@ html {
   color: var(--link-color)
 }
 
+.sup {
+  position: relative;
+  top: 0.8ex; 
+  font-size: 80%;
+}
+
 a.nounderline {text-decoration: none; }
 
 .link {
