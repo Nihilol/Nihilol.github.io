@@ -10,6 +10,7 @@
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
   --color: #FBFCF8;
+  --link-color: #FF3042;
   --gap: 0.5rem;
   --radius: 5px;
 }
@@ -25,10 +26,15 @@ body {
 
 }
 
+html {
+  scroll-padding-top: 10rem;
+}
+
 .sup {
   position: relative;
   bottom: 0.8ex; 
   font-size: 80%;
+  color: var(--link-color)
 }
 
 a.nounderline {text-decoration: none; }
@@ -40,7 +46,8 @@ a.nounderline {text-decoration: none; }
 
 .linkSmall {
   font-size: var(--size);
-  color: #901A1E;
+  /* color: #901A1E; */
+  color: var(--link-color);
 }
 
 .text {
@@ -362,7 +369,7 @@ a.nounderline {text-decoration: none; }
 }
 
 hr {
-  color: rgb(255, 255, 255);
+  color: #FF3042;
 }
 
 
@@ -388,10 +395,11 @@ hr {
   position: relative;
   top: 50%;
   left: 0%;
-  background: var(--color);
-  height: 100%;
+  background: #901A1E;
+  height: 3px;
   width: 100%;
   color: #901A1E;
+  border-color: #901A1E;
 }
 
 #education {
@@ -518,6 +526,12 @@ hr {
   padding-right: 10px;
   padding-bottom: 0px;
   padding-left: 20px;
+}
+
+#mailLinks {
+  position: relative;
+  font-size: var(--logosize);
+  color: #FF6673;
 }
 
 #fullcvimg {
