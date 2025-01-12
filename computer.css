@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", serif;
-  --size: 100%;
+  --size: 0.9vw;
   --logosize: 250%;
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
@@ -17,7 +17,6 @@
 
 body {
   margin: 2rem;
-  /* background-color: var(--color); */
   color: #000000;
   font-size: var(--size);
   font-family: Arial, sans-serif;
@@ -72,32 +71,11 @@ a.nounderline {text-decoration: none; }
   color: #000000;
 }
 
-/* #github {
-  position: fixed;
-  bottom: 450px;
-  right: 450px;
-  background: #1f201f;
-}
-
-#linkedin {
-  position: fixed;
-  bottom: 400px;
-  right: 450px;
-  background: #1f201f;
-}
-
-#orcid {
-  position: fixed;
-  bottom: 350px;
-  right: 450px;
-  background: #1f201f;
-} */
-
 #CV_picture {
   position: fixed;
   top: 15%;
   left: 9.8%;
-  width: 10%;
+  width: 10vw;
   border-radius: 50%;
   height: auto;
   z-index: 2;
@@ -169,6 +147,9 @@ a.nounderline {text-decoration: none; }
   border-radius: var(--radius);
   border: none;
   box-shadow: var(--shadow);
+  width: 6.7vw;
+  font-size: 1vw;
+  height: 2vw;
   position: relative;
   color: #ffffff;
   border-color: #ffffff;
@@ -187,6 +168,9 @@ a.nounderline {text-decoration: none; }
   box-shadow: var(--shadow);
   position: relative;
   color: #ffffff;
+  width: 6.5vw;
+  font-size: 1vw;
+  height: 2vw;
   border-color: #ffffff;
 }
 
@@ -202,6 +186,9 @@ a.nounderline {text-decoration: none; }
   border: none;
   box-shadow: var(--shadow);
   position: relative;
+  width: 10vw;
+  font-size: 1vw;
+  height: 2vw;
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -212,7 +199,7 @@ a.nounderline {text-decoration: none; }
 
 .dropdown {
   position: absolute;
-  width: 250px;
+  width: 15vw;
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   margin-top: 0.3rem;
@@ -248,7 +235,7 @@ a.nounderline {text-decoration: none; }
 
 .dropdown1 {
   position: absolute;
-  width: 250px;
+  width: 15vw;
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   margin-top: 0.3rem;
@@ -272,7 +259,7 @@ a.nounderline {text-decoration: none; }
 
 .dropdown2 {
   position: absolute;
-  width: 250px;
+  width: 15vw;
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   margin-top: 0.3rem;
@@ -432,14 +419,14 @@ hr {
   top: 0%;
   left: 30%;
   width: 65%;
-  height: 149px;
+  height: 14vh;
   z-index:4;
 }
 
 #coverRectangle {
   color: black;
   position: fixed;
-  top: 0%;
+  top: 5vw;
   left: 30%;
   width: 100%;
   height: 150px;
@@ -464,24 +451,24 @@ hr {
 #linksLogosGit {
   position: fixed;
   top: 75%;
-  left: 8%;
-  font-size: var(--logosize);
+  left: 8vw;
+  font-size: 2.2vw;
   color: #ffffff;
   z-index: 2;
 }
 #linksLogosLinkedIn {
   position: fixed;
   top: 75%;
-  left: 13%;
-  font-size: var(--logosize);
+  left: 13vw;
+  font-size: 2.2vw;
   color: #ffffff;
   z-index: 2;
 }
 #linksLogosOrcid {
   position: fixed;
   top: 75%;
-  left: 18%;
-  font-size: var(--logosize);
+  left: 18vw;
+  font-size: 2.2vw;
   color: #ffffff;
   z-index: 2;
 }
@@ -500,7 +487,7 @@ hr {
   position: fixed;
   top: 98%;
   left: 0.5%;
-  font-size: 10px;
+  font-size: 0.5vw;
   color: #901A1E;
   z-index: 2;
 }
