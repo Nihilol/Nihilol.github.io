@@ -109,6 +109,15 @@ a.nounderline {text-decoration: none; }
   z-index: 2;
 }
 
+#academicCounsel {
+  position: fixed;
+  text-align: center;
+  left: 0%;
+  top: 50%;
+  width: 30%;
+  z-index: 2;
+}
+
 #nbi {
   position: fixed;
   top: 55%;
@@ -405,6 +414,15 @@ hr {
 }
 
 #employment {
+  position: absolute;
+  top: 110%;
+  left: 32%;
+  background: var(--color);
+  width: 65%;
+  font-size: 100%;
+}
+
+#voluntaryWork {
   position: absolute;
   top: 110%;
   left: 32%;
